@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="box-header">
+        <img class="alura-icone" src="img/header-a-icon.png" alt="Logotipo da Alura">
+        <h1 class="h1-title">Text Decoder</h1>
+    </header>
+    <main class="box-main">
+        <section class="secao-entrada">
+            <textarea id="inputText" type="text" placeholder="Digite seu texto aqui." class="caixa-texto-entrada"></textarea>
+            <div class="warning-div">
+                <img src="img/body-warning-icon.png" alt="Ícone de Atenção" width="15px"><h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button type="button" class="botao" onclick="processText('criptografar')">
+                    Encriptografar
+                </button>
+                <button type="button" class="botao" onclick="processText('descriptografar')">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        <aside>
+            <div class="secao-saida">
+                <img id="placeholderImage" src="img/searching-icon.png" alt="Imagem de placeholder" class="placeholder-image">
+            <h2 class="status-message">Nenhuma mensagem encontrada</h2>
+            <p id="defaultMessage">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea id="outputText" class="caixa-texto-saida" readonly></textarea>
+                <br>
+                <button type="button" class="botao-copiar hidden" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+<h6 class="texto-footer">Desenvolvido por Kai Ximenes - TURMA 7 - ONE - ALURA - 2024</h6>
+    </footer>
+</body>
+</html>
